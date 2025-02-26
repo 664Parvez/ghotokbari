@@ -104,12 +104,42 @@ nav {
     width: 200px;
 }
 
+#main_nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+#main_nav ul li:last-child {
+    margin-right: 0;
+}
+.login_btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.login_btn:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+.register_btn {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+.register_btn:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .top_contact_details {
         margin: auto;
     }
     .top_social_media {
         display: none;
+    }
+    #main_nav img {
+        width: 150px;
+    }
+    #main_nav ul li {
+        margin-right: 10px;
     }
 }
 
@@ -122,6 +152,14 @@ nav {
     font-size: 50px;
     font-weight: 600;
     color: var(--blue-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #second_section {
+        margin: 30px 0;
+    }
+    #second_section h2 {
+        font-size: 35px;
+    }
 }
 
 /* Third Section */
@@ -146,12 +184,35 @@ nav {
     border-radius: 50%;
     border: 3px solid var(--blue-color);
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #third_section {
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+    #third_section h2 {
+        font-size: 35px;
+    }
+    #third_section h3 {
+        font-size: 30px;
+    }
+}
 
 /* Videos */
+#video_section {
+    margin: 60px 0;
+}
 #video_section h3 {
     color: var(--pink-color);
     font-size: 50px;
     font-weight: 600;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #video_section {
+        margin: 30px 0;
+    }
+    #video_section h3 {
+        font-size: 35px;
+    }
 }
 
 /* Success Story */
@@ -162,6 +223,14 @@ nav {
     color: var(--blue-color);
     font-size: 50px;
     font-weight: 600;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #success_story {
+        margin: 30px 0;
+    }
+    #success_story h3 {
+        font-size: 35px;
+    }
 }
 
 /* Who We Are */
@@ -176,6 +245,17 @@ nav {
 #who_we_are img {
     width: 100%;
     border-radius: 10px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #who_we_are {
+        margin: 30px 0;
+    }
+    #who_we_are h3 {
+        font-size: 35px;
+    }
+    #who_we_are img {
+        margin-bottom: 20px;
+    }
 }
 
 /* Membership */
@@ -206,9 +286,22 @@ nav {
 }
 #membership_section ul li {
     font-size: 20px;
+    margin: 10px 0;
 }
 #membership_section ul li i {
     color: var(--pink-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #membership_section {
+        padding: 30px 0;
+        margin: 30px 0;
+    }
+    #membership_section h3 {
+        font-size: 35px;
+    }
+    .package_name {
+        margin-bottom: 20px;
+    }
 }
 
 /* Gallery */
@@ -220,17 +313,34 @@ nav {
     font-size: 50px;
     font-weight: 600;
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #gallery_section {
+        margin: 30px 0;
+    }
+    #gallery_section h3 {
+        font-size: 35px;
+    }
+}
 
 /* Faq Section */
 #faq_section {
     margin: 60px 0;
-    padding: 60px;
+    padding: 60px 0;
     background-color: var(--off-white);
 }
 #faq_section h3 {
     font-size: 50px;
     font-weight: 600;
     color: var(--blue-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #faq_section {
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+    #faq_section h3 {
+        font-size: 35px;
+    }
 }
 
 /* Blog Section */
@@ -247,6 +357,95 @@ nav {
 #blog_section h4 {
     font-weight: 600;
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #blog_section {
+        margin: 30px 0;
+    }
+}
+
+/* Blog Single Page */
+.single_blog_breadcramb {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("./public/img/slider1.jpg");
+    padding: 80px 0;
+}
+.single_blog_breadcramb h1 {
+    color: var(--white-color);
+}
+#single_blog_main_section {
+    margin: 60px 0;
+}
+.signle_blog_footer .single_blog_tags {
+    width: 50%;
+}
+#signle_post_side h3 {
+    color: var(--blue-color);
+    font-size: 35px;
+}
+.single_blog_tags ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--off-white);
+    padding: 4px 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.single_blog_tags ul li:last-child {
+    margin-right: 0;
+}
+.single_blog_social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.single_blog_social ul li a {
+    color: var(--blue-color);
+    font-size: 20px;
+}
+#comment_form {
+    background-color: var(--off-white);
+    border-radius: 10px;
+    padding: 25px;
+}
+#comment_form .btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+#comment_form .btn:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+
+#sidebar_search_option {
+    background-color: var(--off-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+#sidebar_recent_post {
+    margin-top: 20px;
+    background-color: var(--off-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+#sidebar_recent_post ul li {
+    border-bottom: 1px dashed var(--black-color);
+    margin-top: 15px;
+}
+#sidebar_recent_post ul li img {
+    width: 100%;
+    border-radius: 5px;
+}
+#sidebar_recent_post ul li p {
+    color: var(--black-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #single_blog_main_section {
+        margin: 30px 0;
+    }
+    #signle_post_side h3 {
+        font-size: 25px;
+    }  
+}
+/* Blog Single Page */
 
 #form_section .btn {
     background-color: var(--blue-color);
@@ -260,8 +459,16 @@ nav {
     color: var(--pink-color);
     font-weight: 600;
 }
+#form_section h3 span {
+    color: var(--blue-color);
+}
 #form_section label {
     font-size: 18px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #form_section h3 {
+        font-size: 35px;
+    }
 }
 
 footer {
@@ -279,7 +486,7 @@ footer .footer_logo {
 
 #copywrite {
     background-color: var(--blue-color);
-    padding: 8px 0;
+    padding: 5px 0;
     color: var(--white-color);
 }
 #copywrite a {
@@ -309,6 +516,65 @@ footer .footer_logo {
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #side_social_media_icon {
         display: none;
+    }
+}
+
+
+/* Login Page */
+.login_form_div {
+    background-color: var(--off-white);
+    margin: 100px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.login_form_div .btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.login_form_div .btn:hover {
+    background-color: var(--pink-color);
+}
+.login_form_div label {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .login_form_div {
+        margin: 30px 0;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    .login_form_div {
+        margin: 50px 0;
+    }
+}
+
+/* Register */
+.register_form_div {
+    background-color: var(--off-white);
+    margin: 100px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.register_form_div .btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.register_form_div .btn:hover {
+    background-color: var(--pink-color);
+}
+.register_form_div label {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .register_form_div {
+        margin: 30px 0;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    .register_form_div {
+        margin: 50px 0;
     }
 }
 
