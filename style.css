@@ -6,6 +6,7 @@
     --off-white: #f3edea;
     --blue-color: #242F93;
     --pink-color: #ED2466;
+    --ash-color: #efefef;
 }
 
 * {
@@ -127,6 +128,74 @@ nav {
     background-color: var(--blue-color);
     color: var(--white-color);
 }
+.profile_img img {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+/* Profile Page */
+.profile_section {
+    background-color: var(--ash-color);
+    padding: 60px 0;
+}
+.profile_section .w-full {
+    width: 100%;
+}
+.profile_left_box {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 5px;
+}
+.profile_left_box ul li {
+    padding: 10px 0;
+}
+.profile_left_box ul li a {
+    color: var(--blue-color);
+}
+.profile_img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+}
+.profile_right_box {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 5px;
+}
+.nav-pills .nav-link.active {
+    color: var(--white-color) !important;
+}
+.tab-content {
+    width: 100%;
+}
+.profile_section form .btn {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+.logout_btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.logout_btn:hover {
+    color: var(--white-color);
+    background-color: var(--pink-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .profile_left_box {
+        padding: 15px;
+    }
+    .profile_right_box {
+        padding: 15px;
+    }
+    .profile_section .d-flex {
+        display: block !important;
+    }
+    .profile_tab_data_side {
+        margin-top: 30px;
+    }
+}
+
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .top_contact_details {
